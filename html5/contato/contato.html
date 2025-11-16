@@ -7,15 +7,35 @@
 </head>
 <body>
     <h1>Contato</h1>
-    <img src="../assets/img/perfil.jpeg" alt="A imagem de um homem pardo e jovem adulto, de cabelos pretos e usando uma camisa preta. Ele se encontra sério." width="40%"/>
-    <h2><em>Thiago de Jesus Sousa Pinto</em></h2>
-    <a href="https://wa.me/5598988743821?text=Oi!" target="_blank">
-        <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="Link para o Whatsapp" width="25%"/>
-    </a>
-    <br />
-    <a href="https://www.instagram.com/THI_2U" target="_blank">
-        <img src="https://th.bing.com/th/id/OIP.A_QLZ7Y9nBwaWnkhCbvGmQHaHZ?w=152&h=180&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1" alt="Link para o Instagram" style="width: 20%; margin-top: 25px; display: inline-block;" />
-    </a>
+    
+    <h2>Formulário</h2>
+    <form action="mailto: thiago.jsp02@gmail.com" method="post" enctype="text/plain">
+        <label for="">Nome Completo </label>
+        <input type="text" name="Nome: " /><br /><br />
+        <label for="">E-mail </label>
+        <input type="email" name="E-mail: " id=""><br /><br />
+        <label for="">Sua mensagem:</label><br /><br />
+        <textarea name="Mensagem: " id="" cols="30" rows="10"></textarea><br /><br />
+        <input type="submit" value="Enviar" />
+    </form>
+
+    <h2>Meios de contato</h2>
+    <table cellspacing="10px">
+        <tr>
+            <td>
+                <img src="../assets/img/perfil.jpeg" alt="A imagem de um homem pardo e jovem adulto, de cabelos pretos e usando uma camisa preta. Ele se encontra sério." style="max-width: 150px;" />            
+            </td>
+            <td align="center">
+                <h3><em>Thiago de Jesus Sousa Pinto</em></h3>
+                <a href="https://wa.me/5598988743821?text=Oi!" target="_blank" style="display: block;">
+                    <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="Link para o Whatsapp" style="max-width: 100px;" />
+                </a>
+                <a href="https://www.instagram.com/thi_2u" target="_blank">
+                    <img src="https://th.bing.com/th/id/OIP.A_QLZ7Y9nBwaWnkhCbvGmQHaHZ?w=152&h=180&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1" alt="Link para o Instagram" style="max-width: 50px; margin-top: 20px;text-align: center;" />
+                </a>    
+            </td>
+        </tr>
+    </table>
 
     <a href="../index.html" style="display: block; text-align: center; margin-top: 50px;"><h2>Página inicial</h2></a>
 </body>
