@@ -1,0 +1,41 @@
+body {
+            background-color: rgba(121, 121, 121, 0.37);
+            margin: 0;
+            padding-bottom: 25px;
+}
+
+h1 {
+    color: rgb(19, 14, 104);
+}
+
+hr {
+    border: none;
+    border-bottom: 8px dotted;
+    width: 62px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+#experiencia, #habilidade {
+    margin-left: 20px;
+}
+
+#experiencia tr th, #experiencia tr td, #habilidade tr th, #habilidade tr td{
+    padding: 10px;
+}
+
+#cabecalho {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+}
+
+#cabecalho tr td {
+    padding: 8px;
+    font-size: 11pt
+}
+
+#cabecalho img {
+    width: 100%;
+    max-width: 200px;
+}
