@@ -1,38 +1,52 @@
+/*https://colorhunt.co/palette/3334467f8caab8cfceeaefef*/
+
 body {
     margin: 0px;
 }
 
-/* *************** Seção Tags *************** */
-header, main, footer{
+/**************** Seção Tags ****************/
+header {
+    background-color: #333446;
+}
+
+header h1, header p{
+    color: #B8CFCE;
+    text-align: center;
+}
+
+
+/**************** Seção Classes ****************/
+.cab_celebro{
+    display: block;
+    width: 20%;
+    position: sticky;
+    left: 40%;
+}
+
+
+/**************** Seção IDs ****************/
+#pessoas_tech{
+    
+}
+
+/**************** Seção Exemplo ****************/
+main div{
     width: 200px;
     height: 200px;
+    display: inline-block;
+    position: absolute;
 }
 
-header{
-    background-color: #016B61;
-    margin-top: 0px;
-    border: solid black 10px;
-    padding: 20px;
-    margin-left: 0px;
-}
-header h1, header p{
-    text-align: center;
-    color: #9ECFD4;
-}
-
-header h1{
-    margin-top: 0px;
-}
-
-main{
+#vermelho{
     background-color: red;
-    border: solid black 20px;
-    align-items: center;
-    margin-left: 260px;
 }
 
-footer{
+#amarelo{
     background-color: yellow;
-    border: solid black 10px;
-    margin-left: 500px;
+    left: 205px;
+}
+
+#roxo{
+    background-color:blueviolet;
+    left: 405px;
 }
