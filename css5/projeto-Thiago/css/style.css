@@ -30,12 +30,12 @@ header h1{
     top: 152.83px;
 }
 
-/* #cab_celebro1{
-    
-} */
+#cab_celebro1{
+    left: 10%;
+}
 
 #cab_celebro2{
-    right: 0px;
+    right: 10%;
 }
 
 #pessoas_tech{
@@ -51,23 +51,6 @@ header h1{
 
 
 /**************** Seção Exemplo ****************/
-main div{
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    position: absolute;
-}
+/* main{
 
-/* #vermelho{
-    background-color: red;
-}
-
-#amarelo{
-    background-color: yellow;
-    left: 205px;
-}
-
-#roxo{
-    background-color:blueviolet;
-    left: 405px;
 } */
