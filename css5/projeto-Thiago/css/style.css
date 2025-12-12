@@ -2,32 +2,53 @@
 
 body {
     margin: 0px;
+    font-family: "Merriweather", serif;
 }
 
-/**************** Seção Tags ****************/
+/**************** Seção Cabeçalho ****************/
 header {
     background-color: #333446;
+    position: relative;
 }
 
 header h1, header p{
     color: #B8CFCE;
+    margin: 0 auto;
+    width: 250px;
     text-align: center;
 }
 
-
-/**************** Seção Classes ****************/
-.cab_celebro{
-    display: block;
-    width: 20%;
-    position: sticky;
-    left: 40%;
+header h1{
+    font-family: "Sacramento", cursive;
+    font-weight: normal;
 }
 
+.cab_celebro{
+    width: 20%;
+    max-width: 100px;
+    position: absolute;
+    top: 152.83px;
+}
 
-/**************** Seção IDs ****************/
-/* #pessoas_tech{
+/* #cab_celebro1{
     
 } */
+
+#cab_celebro2{
+    right: 0px;
+}
+
+#pessoas_tech{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/**************** Seção Classes ****************/
+
+/**************** Seção IDs ****************/
+
 
 /**************** Seção Exemplo ****************/
 main div{
@@ -37,7 +58,7 @@ main div{
     position: absolute;
 }
 
-#vermelho{
+/* #vermelho{
     background-color: red;
 }
 
@@ -49,4 +70,4 @@ main div{
 #roxo{
     background-color:blueviolet;
     left: 405px;
-}
+} */
