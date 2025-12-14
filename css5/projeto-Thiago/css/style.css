@@ -1,41 +1,72 @@
 /*https://colorhunt.co/palette/3334467f8caab8cfceeaefef*/
 
+* {
+    margin: 0%;
+}
+
 body {
-    margin: 0px;
     font-family: "Merriweather", serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: normal;
+}
+
+h2, h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+}
+
+p{
+    font-size: 1em;
+}
+
+h3{
+    color: #11999e;
+}
+
+img{
+    max-width: 100%;
 }
 
 /**************** Seção Cabeçalho ****************/
 header {
     background-color: #333446;
     position: relative;
+    top: 0;
+    width: 100%;
+}
+
+header p{
+    font-size: 1rem;
 }
 
 header h1, header p{
     color: #B8CFCE;
-    margin: 0 auto;
-    width: 250px;
     text-align: center;
+    line-height: 2em;
 }
 
 header h1{
     font-family: "Sacramento", cursive;
-    font-weight: normal;
+    color: #66BFBF;
 }
 
 .cab_celebro{
-    width: 20%;
-    max-width: 100px;
+    width: 8%;
+    max-width: 37px;
     position: absolute;
-    top: 152.83px;
+    top: 45%;
 }
 
 #cab_celebro1{
-    left: 10%;
+    left: 7%;
 }
 
 #cab_celebro2{
-    right: 10%;
+    right: 7%;
 }
 
 #pessoas_tech{
@@ -47,6 +78,32 @@ header h1{
 
 /**************** Seção Classes ****************/
 
+.habilidades-row {
+    width: 50%;
+    margin: 40px auto;
+}
+
+.habilidades-row figcaption{
+    text-align: left;
+    font-size: 0.8em;
+    line-height: 1.75;
+}
+
+.code-img, .fazer-img{
+    width: 25%;
+}
+
+.code-img{
+    float: left;
+}
+
+.fazer-img{
+    float: right;
+}
+
+.contato{
+    margin-top: 100px;
+}
 /**************** Seção IDs ****************/
 
 
