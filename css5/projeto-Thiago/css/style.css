@@ -7,20 +7,25 @@
 body {
     font-family: "Merriweather", serif;
     text-align: center;
+    color: #40514e;
 }
 
 h1{
     font-size: 5rem;
     font-weight: normal;
+    margin-bottom: 10px;
+    line-height: 1.75;
 }
 
 h2, h3{
     font-family: "Montserrat", sans-serif;
     font-size: 1.3rem;
+    line-height: 1.75;
 }
 
 p{
     font-size: 1em;
+    line-height: 1.75;
 }
 
 h3{
@@ -29,6 +34,13 @@ h3{
 
 img{
     max-width: 100%;
+}
+
+hr{
+    border: #40514e 2px dotted;
+    border-bottom: none;
+    width: 10%;
+    margin: 50px auto;
 }
 
 /**************** Seção Cabeçalho ****************/
@@ -79,35 +91,101 @@ header h1{
 /**************** Seção Classes ****************/
 
 .habilidades-row {
-    width: 50%;
     margin: 40px auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .habilidades-row figcaption{
     text-align: left;
     font-size: 0.8em;
-    line-height: 1.75;
+    width: 60%;
+    position: relative;
+    margin: auto 5px;
 }
 
 .code-img, .fazer-img{
     width: 25%;
-}
-
-.code-img{
-    float: left;
-}
-
-.fazer-img{
-    float: right;
+    max-width: 300px;
+    min-width: 200px;
 }
 
 .contato{
-    margin-top: 100px;
+    width: 70%;
+    margin: auto;
+}
+
+.mensagem-contato{
+    margin: 30px auto;
+}
+
+.contato-email{
+    display: block;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #333446;
+    color: #B8CFCE;
+    width: 30%;
+    min-width: 150px;
+    border-radius: 5px;
+    text-decoration: none;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.contato-email:hover{
+    background-color: #7fa3a1;
+    color: #202130;
+}
+
+footer{
+    margin: 20px auto 0px;
+    background-color: #333446;
+    position:relative;
+    width: 100%;
+    bottom: 0px;
+}
+
+footer img{
+    height: 25px;
+    margin: 5px 10px;
+    padding: 10px 5px;
+}
+
+/* footer img:hover{
+    background-color: #2b3b3b;
+} */
+
+footer p{
+    font-size: .6rem;
+    color: #B8CFCE;
+    margin: 5px auto 0px;
+    padding-bottom: 5px;
 }
 /**************** Seção IDs ****************/
 
 
 /**************** Seção Exemplo ****************/
-/* main{
+.principal {
+    border: rebeccapurple 2px solid;
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items: center;
+}
 
-} */
+.principal div{
+    border: goldenrod solid 2px;
+    width: 125px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.principal div:nth-child(3){
+    border: red solid 10px;
+    align-self: self-start;
+}
