@@ -140,28 +140,47 @@ header h1{
     color: #202130;
 }
 
+.redes-contato{
+    display: flex;
+    width: 40px;
+    flex-flow: column;
+    position: fixed;
+    bottom: 6%;
+    right: 0px;
+    z-index: 2;
+    background-color: #202130e3;
+    border-radius: 10px;
+}
+
+.redes-contato a{
+    text-decoration: none;
+}
+
+.redes-contato a:hover{
+    background-color: #2f4852;
+    border-radius: 10px;
+}
+
+.redes-contato img{
+    height: 19px;
+    margin: 0px 10px;
+    padding: 10px 0px;
+}
+
 footer{
-    margin: 20px auto 0px;
+    display: block;
+    margin: 5px auto;
     background-color: #333446;
     position:relative;
     width: 100%;
     bottom: 0px;
 }
 
-footer img{
-    height: 25px;
-    margin: 5px 10px;
-    padding: 10px 5px;
-}
-
-/* footer img:hover{
-    background-color: #2b3b3b;
-} */
-
 footer p{
-    font-size: .6rem;
+    padding: 10px;
+    font-size: .5rem;
     color: #B8CFCE;
-    margin: 5px auto 0px;
+    margin: 0px auto 0px;
     padding-bottom: 5px;
 }
 /**************** Seção IDs ****************/
@@ -171,21 +190,24 @@ footer p{
 .principal {
     border: rebeccapurple 2px solid;
     width: 90%;
+    max-width: 450px;
     height: 150px;
     display: flex;
     flex-flow: row wrap;
     justify-content:space-around;
     align-items: center;
+    margin: auto;
 }
 
 .principal div{
     border: goldenrod solid 2px;
-    width: 125px;
-    height: 60px;
+    width: 40%;
+    height: 40px;
     box-sizing: border-box;
+    align-content: center;
 }
 
-.principal div:nth-child(3){
-    border: red solid 10px;
-    align-self: self-start;
+.principal div:nth-child(1){
+    border: red solid 5px;
+    align-self: flex-end;
 }
