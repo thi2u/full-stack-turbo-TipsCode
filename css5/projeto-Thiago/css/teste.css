@@ -22,6 +22,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column;
 }
 
 header{
@@ -38,4 +39,23 @@ main{
 
 footer{
     grid-area: rodape;
+}
+
+.contato-email{
+    font-size: 1rem;
+    display: block;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #333446;
+    color: #B8CFCE;
+    min-width: max-content;
+    border-radius: 5px;
+    text-decoration: none;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.contato-email:hover{
+    background-color: #7fa3a1;
+    color: #202130;
 }
