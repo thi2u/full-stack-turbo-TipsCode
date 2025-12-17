@@ -183,31 +183,8 @@ footer p{
     margin: 0px auto 0px;
     padding-bottom: 5px;
 }
+
 /**************** Seção IDs ****************/
 
 
 /**************** Seção Exemplo ****************/
-.principal {
-    border: rebeccapurple 2px solid;
-    width: 90%;
-    max-width: 450px;
-    height: 150px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-around;
-    align-items: center;
-    margin: auto;
-}
-
-.principal div{
-    border: goldenrod solid 2px;
-    width: 40%;
-    height: 40px;
-    box-sizing: border-box;
-    align-content: center;
-}
-
-.principal div:nth-child(1){
-    border: red solid 5px;
-    align-self: flex-end;
-}

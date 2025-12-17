@@ -1,0 +1,31 @@
+html, body {
+    margin: 20px;
+    height: calc(100% - 40px);
+    background-color: burlywood;
+}
+
+div{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 30px;
+    border: solid 5px darkcyan;
+    background: #fff;
+}
+
+body{
+    display: grid; 
+    grid-template-columns:
+        [inicio] 1fr
+        [metade-1 meio-1] 1fr
+        [metade-2 meio-2] 1fr
+        [fim];
+    grid-template-rows: 100px 25% 20%;    
+}
+
+body div:nth-child(4){
+    grid-column-start: inicio;
+    grid-column-end: meio-1;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
