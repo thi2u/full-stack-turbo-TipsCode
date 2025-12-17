@@ -1,31 +1,61 @@
-html, body {
-    margin: 20px;
-    height: calc(100% - 40px);
-    background-color: burlywood;
-}
-
-div{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    font-size: 30px;
-    border: solid 5px darkcyan;
-    background: #fff;
+*{
+    padding: 0;
+    margin: 0;
 }
 
 body{
-    display: grid; 
-    grid-template-columns:
-        [inicio] 1fr
-        [metade-1 meio-1] 1fr
-        [metade-2 meio-2] 1fr
-        [fim];
-    grid-template-rows: 100px 25% 20%;    
+    /* justify-self: center; */
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 125px 1fr 50px;
+    grid-template-areas: 
+    'cabecalho cabecalho'
+    'navegacao conteudo'
+    /* 'conteudo' */
+    'rodape rodape';
 }
 
-body div:nth-child(4){
-    grid-column-start: inicio;
-    grid-column-end: meio-1;
-    grid-row-start: 3;
-    grid-row-end: 6;
+.box{
+    border: solid 5px rebeccapurple;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+header{
+    grid-area: cabecalho;
+}
+
+nav{
+    grid-area: navegacao;
+}
+
+main{
+    grid-area: conteudo;
+}
+
+footer{
+    grid-area: rodape;
+}
+
+.contato-email{
+    font-size: 1rem;
+    display: block;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #333446;
+    color: #B8CFCE;
+    min-width: max-content;
+    border-radius: 5px;
+    text-decoration: none;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.contato-email:hover{
+    background-color: #7fa3a1;
+    color: #202130;
 }
