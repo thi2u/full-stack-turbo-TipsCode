@@ -14,6 +14,10 @@ p{
     color: #8f8f8f;
 }
 
+.row{
+    max-width: 100%;
+}
+
 /* ---------------------- Header ---------------------- */
 
 #title figure{
@@ -47,7 +51,7 @@ p{
 }
 
 .title-image{
-    width: 60%;
+    width: 40%;
     transform: rotate(25deg);
 }
 
@@ -56,6 +60,7 @@ p{
 #features{
     align-items: center;
     justify-content: space-around;
+    max-width: 100%;
 }
 
 .div-items{
@@ -84,7 +89,7 @@ p{
 /* ---------------------- TESTIMONIALS & PRESS ---------------------- */
 
 #testimonials{
-    background-color: #ef8172;
+    background-color: #ef8172b0;
     padding: 7% 15%;
     text-align: center;
     color: white;
@@ -97,12 +102,59 @@ p{
 }
 
 #press{
-    background-color: #ef8172;
-    padding: 1%;
-    text-align: center;
+    background-color: #ef817296;
+    padding: 20px;
 }
 
 #press img{
-    width: 15%;
-    margin: 0px 20px 20px;
+    width: 40%;
+    margin: 0px auto 50px;
+    max-width: 250px;
+}
+
+/* ---------------------- CARD PRICING ---------------------- */
+
+#pricing{
+    margin-top: 2%;
+}
+
+#pricing .col{
+    margin: 1% auto;
+}
+
+.card-header h3{
+    margin: 0px auto;
+}
+
+#pricing li{
+    font-size: 0.8rem;
+    margin: 6px auto;
+}
+
+.botao-rs{
+    background-color: #ca6153;
+    color: white;
+    font-size: 1.2rem;
+    border: solid 0.2rem;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.botao-rs:hover{
+    color: #ca6153;
+    border: solid 0.2rem #ca6153;
+}
+
+.botao-gts {
+    color: #ca6153;
+    border: solid 0.2rem #ca6153;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.botao-gts:hover {
+    background-color: #ca6153;
+    color: white;
+    border: solid 0.2rem;
+    font-weight: 500;
 }
