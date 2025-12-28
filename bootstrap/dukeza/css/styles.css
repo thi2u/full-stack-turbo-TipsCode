@@ -32,6 +32,7 @@ p{
 
 #title .row{
     margin: 0px;
+    /* padding: 0 15%; */
 }
 
 .navbar-brand{
@@ -52,7 +53,9 @@ p{
 
 .title-image{
     width: 40%;
-    transform: rotate(25deg);
+    max-width: 200px;
+    transform: rotate(35deg);
+    position: absolute;
 }
 
 /* ---------------------- Features ---------------------- */
@@ -61,6 +64,9 @@ p{
     align-items: center;
     justify-content: space-around;
     max-width: 100%;
+    background-color: white;
+    z-index: 1;
+    position: relative;
 }
 
 .div-items{
