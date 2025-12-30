@@ -204,4 +204,10 @@ p{
 
 #footer {
     background-color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#footer p{
+    font-size: .7rem;
 }
