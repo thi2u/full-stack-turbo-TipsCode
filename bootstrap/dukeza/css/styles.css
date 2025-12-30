@@ -27,12 +27,11 @@ p{
 #title{
     background-color: #051d35;
     color: #fff;
-    padding-bottom: 10px;
+    padding-bottom: 10%;
 }
 
 #title .row{
     margin: 0px;
-    /* padding: 0 15%; */
 }
 
 .navbar-brand{
@@ -56,6 +55,24 @@ p{
     max-width: 200px;
     transform: rotate(35deg);
     position: absolute;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .title-image{
+        position: static;
+        transform: rotate(0deg);
+        margin: 5% auto;
+    }
+
+    #title .row{
+        text-align: center;
+    }
+
+    #title{
+        padding-bottom: 3%;
+    }
 }
 
 /* ---------------------- Features ---------------------- */
@@ -98,7 +115,7 @@ p{
     background-color: #ef8172b0;
     padding: 7% 15%;
     text-align: center;
-    color: white;
+    color: whi0te;
 }
 
 #testimonials img{
@@ -121,7 +138,7 @@ p{
 /* ---------------------- CARD PRICING ---------------------- */
 
 #pricing{
-    margin-top: 2%;
+    margin: 5%;
 }
 
 #pricing .col{
@@ -163,4 +180,28 @@ p{
     color: white;
     border: solid 0.2rem;
     font-weight: 500;
+}
+
+/* ---------------------- CTA ---------------------- */
+
+#cta {
+    background-color: #051d35;
+    padding: 50px;
+    text-align: center;
+}
+
+#cta h3{
+    font-family: "Montserrat-bold";
+    margin-bottom: 40px;
+    color: white;
+}
+
+#cta .btn{
+    margin: 10px;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
+#footer {
+    background-color: #fff;
 }
