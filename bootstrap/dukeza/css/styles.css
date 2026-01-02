@@ -1,13 +1,7 @@
-/* ---------------------- TAGS ---------------------- */
+/* ---------------------- TAGS GERAIS ---------------------- */
 
 body{
     font-family: "Montserrat", sans-serif;
-}
-
-h1 {
-    line-height: 1.5;
-    font-size: 3rem;
-    font-family: "Montserrat-black";
 }
 
 p{
@@ -18,20 +12,36 @@ p{
     max-width: 100%;
 }
 
+.btn-download{
+    margin: 10px;
+}
+
 /* ---------------------- Header ---------------------- */
 
-#title figure{
-    padding: 0px;
-}
+/* ID */
 
 #title{
     background-color: #051d35;
     color: #fff;
-    padding-bottom: 10%;
+    padding-bottom: 6%;
 }
 
-#title .row{
-    margin: 0px;
+#big-head {
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+#navbarTogglerDemo01 {
+    justify-content: end;
+}
+
+/* CLASSES */
+
+.title-image{
+    width: 40%;
+    max-width: 200px;
+    transform: rotate(35deg);
+    position: absolute;
 }
 
 .navbar-brand{
@@ -46,36 +56,30 @@ p{
 
 .nav-link{
     font-size: 1.2rem;
-    font-family: "Montserrat", sans-serif;
-    color: #fff;
-}
-
-.title-image{
-    width: 40%;
-    max-width: 200px;
-    transform: rotate(35deg);
-    position: absolute;
 }
 
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-    .title-image{
-        position: static;
-        transform: rotate(0deg);
-        margin: 5% auto;
+
+    #title{
+        padding-bottom: 3%;
     }
 
     #title .row{
         text-align: center;
     }
 
-    #title{
-        padding-bottom: 3%;
+    .title-image{
+        position: static;
+        transform: rotate(0deg);
+        margin: 5% auto;
     }
 }
 
 /* ---------------------- Features ---------------------- */
+
+/* ID */
 
 #features{
     align-items: center;
@@ -85,6 +89,8 @@ p{
     z-index: 1;
     position: relative;
 }
+
+/* CLASSE */
 
 .div-items{
     padding: 40px 10px;
@@ -101,21 +107,23 @@ p{
     margin-bottom: 1rem;
 }
 
-.div-items h3{
-    font-family: "Montserrat-bold";
-}
-
 .div-items:hover i{
     color: #ef8172;
 }
 
+.div-items h3{
+    font-weight: bold;
+}
+
 /* ---------------------- TESTIMONIALS & PRESS ---------------------- */
+
+/* ID */
 
 #testimonials{
     background-color: #ef8172b0;
     padding: 7% 15%;
     text-align: center;
-    color: whi0te;
+    color: white;
 }
 
 #testimonials img{
@@ -135,7 +143,9 @@ p{
     max-width: 250px;
 }
 
-/* ---------------------- CARD PRICING ---------------------- */
+/* ---------------------- PRICING ---------------------- */
+
+/* ID */
 
 #pricing{
     margin: 5%;
@@ -145,44 +155,46 @@ p{
     margin: 1% auto;
 }
 
-.card-header h3{
-    margin: 0px auto;
-}
-
 #pricing li{
     font-size: 0.8rem;
     margin: 6px auto;
 }
 
-.botao-rs{
-    background-color: #ca6153;
-    color: white;
+/* CLASSE */
+
+.card-header h3{
+    margin: 0px auto;
+}
+
+.botao-rs, .botao-gts {
+    border: solid 0.2rem #ca6153;
     font-size: 1.2rem;
-    border: solid 0.2rem;
     font-weight: 500;
     box-sizing: border-box;
 }
 
-.botao-rs:hover{
+.botao-rs {
+    background-color: #ca6153;
+    color: white;
+}
+
+.botao-rs:hover {
     color: #ca6153;
     border: solid 0.2rem #ca6153;
 }
 
 .botao-gts {
     color: #ca6153;
-    border: solid 0.2rem #ca6153;
-    font-weight: 500;
-    box-sizing: border-box;
 }
 
 .botao-gts:hover {
     background-color: #ca6153;
     color: white;
-    border: solid 0.2rem;
-    font-weight: 500;
 }
 
 /* ---------------------- CTA ---------------------- */
+
+/* ID */
 
 #cta {
     background-color: #051d35;
@@ -191,23 +203,29 @@ p{
 }
 
 #cta h3{
-    font-family: "Montserrat-bold";
+    font-weight: bold;
     margin-bottom: 40px;
     color: white;
 }
 
-#cta .btn{
-    margin: 10px;
-}
-
 /* ---------------------- FOOTER ---------------------- */
+
+/* ID */
 
 #footer {
     background-color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 5px 0px;
+    justify-content: center;
 }
 
 #footer p{
     font-size: .7rem;
+    margin-bottom: 0px;
+}
+
+/* CLASSE */
+
+.link-icone i{
+    font-size: 1.1rem;
 }
