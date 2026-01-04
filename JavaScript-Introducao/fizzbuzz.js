@@ -2,9 +2,7 @@
 let conjunto = []
 
 // Variáveis para controlar os elementos a serem adicionados no conjunto
-let elementoConjunto = 1
-
-while (conjunto.length != 100){
+for(let elementoConjunto = 1; conjunto.length < 100; elementoConjunto++){
     if(elementoConjunto % 15 == 0){
         conjunto.push("FizzBuzz")
     } else if(elementoConjunto % 5 == 0){
@@ -14,8 +12,6 @@ while (conjunto.length != 100){
     } else {
         conjunto.push(elementoConjunto)
     }
-    
-    elementoConjunto++
 }
 
 console.log(conjunto);
