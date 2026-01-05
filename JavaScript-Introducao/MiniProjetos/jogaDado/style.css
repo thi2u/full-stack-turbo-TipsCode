@@ -1,0 +1,49 @@
+/* -------------- TAGS GERAIS -------------- */
+
+.pageViewport{
+    background-color: #061E29;
+    margin: 0%;
+}
+
+.tituloInicial, .rodape{
+    text-align: center;
+    color: #F3F4F4;
+    font-family: "Iceberg";
+}
+
+p{
+    margin: 0px;
+}
+
+/* -------------- CABECALHO -------------- */
+
+
+/* -------------- MAIN -------------- */
+
+.abaPrincipal{
+    background-color: #1D546D;
+    text-align: center;
+}
+
+#jogador1, #jogador2{
+    background-color: #F3F4F4;
+    color: #061E29;
+    font-family: "Audiowide", sans-serif;
+}
+
+.jogadores img{
+    visibility: hidden;
+    width: 40%;
+}
+
+/* -------------- FOOTER -------------- */
+
+.rodape{
+    width: 100%;
+    align-content: center;
+}
+
+.redesSociais, .copyright{
+    font-size: 0.8rem;
+}
+
