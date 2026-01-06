@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joga o Dado</title>
+    <title>🎲 Joga o Dado 🎲</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Iceberg&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Iceberg&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body class="pageViewport">
     <header class="cabecalho">
-        <h1 class="tituloInicial">Joga o Dado</h1>
+        <h1 class="tituloInicial">🎲 Joga o Dado 🎲</h1>
     </header>
     <main class="abaPrincipal">
+        <div id="boxPlacar">
+            <h2 id="textoPlacar">Placar</h2>
+            <hr />
+            <h3 id="textoVencedor">Vencedor</h3>
+            <div id="boxPontos">
+                <div id="pontosPlayer1">
+                    <h3 class="tituloPlayer">Jogador 1
+                    </h3>
+                    <p>0</p>
+                </div>
+                <div id="pontosPlayer2">
+                    <h3 class="tituloPlayer">Jogador 2
+                    </h3>
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
         <div class="jogadores">
             <div id="jogador1">
                 <p class="tituloPlayer">Jogador 1</p>
-                <img src="./images/dice1.png">
+                <img src="./images/dice1.png" id="dadoPlayer1">
             </div>
             <div id="jogador2">
                 <p class="tituloPlayer">Jogador 2</p>
-                <img src="./images/dice1.png">
+                <img src="./images/dice1.png" id="dadoPlayer2">
             </div>
         </div>
-        <button onclick="iniciarJogo()">Iniciar</button>
+        <button class="botaoJogo" onclick="iniciarJogo()">Iniciar Jogo</button>
     </main>
     <footer class="rodape">
         <div class="itemsRodape">

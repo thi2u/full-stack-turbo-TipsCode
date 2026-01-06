@@ -1,14 +1,26 @@
 /* -------------- TAGS GERAIS -------------- */
-
-.pageViewport{
-    background-color: #061E29;
-    margin: 0%;
+.activeBlock {
+    display: block !important; 
 }
 
-.tituloInicial, .rodape{
+.pageViewport{
+    margin: 0%;
+    background-color: #F3F4F4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr 1fr 50px;
+    grid-template-areas: 
+    'cabecalho'
+    'conteudo'
+    'conteudo'
+    'rodape';
+}
+
+.tituloInicial, .rodape, .botaoJogo{
     text-align: center;
     color: #F3F4F4;
     font-family: "Iceberg";
+    border: none;
 }
 
 p{
@@ -16,34 +28,112 @@ p{
 }
 
 /* -------------- CABECALHO -------------- */
-
+.cabecalho {
+    background-color: #061E29;
+    grid-area: cabecalho;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 60px 0px;
+}
 
 /* -------------- MAIN -------------- */
 
 .abaPrincipal{
-    background-color: #1D546D;
     text-align: center;
+    grid-area: conteudo;
+}
+
+.jogadores{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    margin: 5px 0px;
 }
 
 #jogador1, #jogador2{
-    background-color: #F3F4F4;
     color: #061E29;
     font-family: "Audiowide", sans-serif;
+    font-size: 1.8rem;
 }
 
-.jogadores img{
-    visibility: hidden;
-    width: 40%;
+.tituloPlayer{
+    margin: 20px 0px;
+}
+
+#dadoPlayer1, #dadoPlayer2{
+    width: 80%;
+    max-width: 250px;
+}
+
+.botaoJogo{
+    margin: auto;
+    background-color: #061E29;
+    width: max-content;
+    max-width: 100px;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.botaoJogo:hover{
+    background-color: #1D546D;
+    font-weight: bolder;
+}
+
+#boxPlacar{
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.2rem;
+    color: #F3F4F4;
+    background-color: #1D546D;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    display: none;
+}
+
+#boxPontos{
+    background-color: #061E29;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+#boxPontos p{
+    font-family: "Orbitron", sans-serif;
+    font-size: 5rem;
+    line-height: 3rem;
+}
+
+#textoVencedor, #textoPlacar{
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .cabecalho{
+        font-size: 1.5rem;
+    }
+
+    #boxPontos h3{
+        font-size: 1rem;
+    }
 }
 
 /* -------------- FOOTER -------------- */
 
 .rodape{
     width: 100%;
+    padding: 10px px;
     align-content: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: #061E29;
 }
 
 .redesSociais, .copyright{
     font-size: 0.8rem;
+    margin: 10px;
 }
 
