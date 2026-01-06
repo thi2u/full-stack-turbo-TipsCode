@@ -12,14 +12,14 @@ const matrizDados = [
 ]
 
 function iniciarJogo(){
-    const attributesPlayer1 = abaPrincipal.querySelector("#dadoPlayer1").attributes
-    const attributesPlayer2 = abaPrincipal.querySelector("#dadoPlayer2").attributes
+    const attributesPlayer1 = abaPrincipal.querySelector("#dadoPlayer1")
+    const attributesPlayer2 = abaPrincipal.querySelector("#dadoPlayer2")
     
     const resultadoPlayer1 = Math.floor(Math.random()*6)
     const resultadoPlayer2 = Math.floor(Math.random()*6)
 
-    attributesPlayer1.src.textContent = matrizDados[resultadoPlayer1]
-    attributesPlayer2.src.textContent = matrizDados[resultadoPlayer2]
+    attributesPlayer1.src = matrizDados[resultadoPlayer1]
+    attributesPlayer2.src = matrizDados[resultadoPlayer2]
 
     if (resultadoPlayer1>resultadoPlayer2) {
         pontosPlayer1++
