@@ -35,7 +35,7 @@ function iniciarJogo(){
     } else if(pontosPlayer2 != pontosPlayer1) {
         abaPrincipal.querySelector("#textoVencedor").textContent = tituloPlayer[1].innerHTML + " está ganhando"
     } else {
-        abaPrincipal.querySelector("#textoVencedor").textContent = "Está empatado"
+        abaPrincipal.querySelector("#textoVencedor").textContent = "Empatado"
     }
 
     abaPrincipal.querySelector("#boxPlacar").classList.add("activeBlock")

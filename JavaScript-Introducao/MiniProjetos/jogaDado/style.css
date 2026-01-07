@@ -91,7 +91,7 @@ p{
     width: 50%;
     margin: auto;
     border-radius: 10px;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 #boxPontos{
@@ -126,15 +126,29 @@ p{
 
 .rodape{
     width: 100%;
-    padding: 10px px;
+    padding: 20px 0px;
     align-content: center;
     position:relative;
     bottom: 0px;
     background-color: #061E29;
+    box-sizing: border-box;
 }
 
 .redesSociais, .copyright{
     font-size: 0.8rem;
-    margin: 10px;
 }
 
+.redesSociais a{
+    color: #F3F4F4;
+}
+
+#gitLink{
+    font-size: 2rem;
+    position: fixed;
+    top: 50%;
+    right: 1px;
+}
+
+#gitLink a{
+    color: #061E29;
+}
