@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    width: 100%;
+}
+
+#bodyVisible{
+    background-color:  black;
+    color: white;
+    font-family: "DotGothic16", sans-serif;
+}
+
+/* --------------- HEADER --------------- */
+
+#topo{
+    background-color:  #8c8c8c;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    height: 12vh;
+}
+
+#topo h1, #topo a{
+    color:  #181818 ;
+    font-size: 3rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+#topo a{
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+#topo a span{
+    font-size: 1.5rem;
+    visibility: hidden;
+    font-weight: bold;
+}
+
+
+/* --------------- MAIN --------------- */
+
+#principal{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 88vh;
+    align-items: center;
+}
+
+.boxColor{
+    background-color: #8c8c8c;
+    color: #181818;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+.corpoColor, .tituloColor{
+    padding: 20px 0px;
+}
+
+.tituloColor{
+    font-size: 1.5rem;
+    background-color: black;
+    color: #8c8c8c;
+    border: solid 1px #8c8c8c;
+    border-radius: 20px;
+}
+
+.corpoColor {
+    font-size: 2.5rem;
+}
+
+#buttonColor{
+    width: 50%;
+    background-color: #181818;
+    color: #8c8c8c;
+    border: solid 1px #8c8c8c;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#buttonColor:hover{
+    background-color: #8c8c8c;
+    color: #181818;
+    border: solid 1px #181818;
+}
+
+/* --------------- MAIN --------------- */
+
+@media (min-width: 900px){
+    
+    
+    #topo h1:hover{
+        text-shadow: 300px 0px  #383838;
+    }
+    
+    #topo a:hover span{
+        visibility: visible;
+    }
+    
+    .corpoColor {
+        font-size: 3.75rem;
+    }
+
+    .buttonColor{
+        font-size: 1rem
+    }
+}
+
+@media (max-width: 720px){
+    #principal{
+        flex-flow: column;
+    }
+    
+    #topo h1{
+        font-size: 2.5rem;
+    }
+    
+    .corpoColor {
+        font-size: 2rem;
+    }
+
+    .boxColor{
+    width: 60%;
+    }
+}
