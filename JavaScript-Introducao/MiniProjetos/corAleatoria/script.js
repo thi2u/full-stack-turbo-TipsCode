@@ -19,7 +19,6 @@ function convertHex(numero){
     numeroConvertHex1 = ajusteHex(numeroConvertHex1)
     numeroConvertHex2 = ajusteHex(numeroConvertHex2)
     
-    //return String(numeroConvertHex1) + String(numeroConvertHex2)
     return `${numeroConvertHex1}${numeroConvertHex2}`
 }
 
