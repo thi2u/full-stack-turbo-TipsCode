@@ -16,7 +16,7 @@ footer {
   font-family: sans-serif;
 }
 
-.w {
+/* .w {
 
 }
 
@@ -42,7 +42,7 @@ footer {
 
 .l {
 
-}
+} */
 
 .set {
   margin: 10% auto;
@@ -78,4 +78,8 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+.audioDrum{
+  display: none;
 }
