@@ -21,17 +21,25 @@ const keysPressed = [
     "KeyL"
 ]
 
+const imagesBateria = [
+    "./images/crash.png",
+    "./images/kick.png",
+    "./images/snare.png",
+    "./images/tom1.png",
+    "./images/tom2.png",
+    "./images/tom3.png",
+    "./images/tom4.png"
+]
+
 // Função que verifica se o usuário clicou em um dos elementos de nossa tela
-keysPressed.forEach(keyClick)
-function keyClick(item, indice){
-    bodySelected.addEventListener("keydown", function (e){
-        if (e.code == item){
-        tocarAudio(indice)
-        }
-        console.log (e.code)
+bodySelected.addEventListener("keydown", function (e){
+    const keyDown = keysPressed.indexOf(e.code)
+    if (keyDown !== -1){
+    tocarAudio(keyDown)
     }
-)
 }
+)
+
 botoes.forEach(handleClick)
 function handleClick(item, indice){
     item.addEventListener("click", function (){
@@ -40,20 +48,13 @@ function handleClick(item, indice){
 )
 }
 
-// Função que captura as teclas pressionadas e verifica se é igual às teclas indicadas em nosso array, que identifica W, A, S, D, J, K, L
-keysPressed.forEach(keyClick)
-function keyClick(item, indice){
-    bodySelected.addEventListener("keydown", function (e){
-        if (e.code == item){
-        tocarAudio(indice)
-        }
-        console.log (e.code)
-    }
-)
-}
-
 // Função para tocar o áudio
 function tocarAudio(indice){    
     const audioDrum = new Audio(fileSounds[indice])
     audioDrum.play()
+}
+
+for (let indice = 0; indice < botoes.length; indice++) {
+    botoes[indice].style.backgroundImage=`url(${imagesBateria[indice]})`
+    botoes[indice].style.backgroundSize=`contain`
 }

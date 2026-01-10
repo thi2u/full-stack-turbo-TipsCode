@@ -94,3 +94,8 @@ footer {
 #gitLink a{
     color: #db5d59;
 }
+
+footer{
+  font-size: 3rem;
+  font-weight: bold;
+}
