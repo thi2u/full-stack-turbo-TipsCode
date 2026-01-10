@@ -4,4 +4,4 @@ https://thi2u.github.io/full-stack-turbo-TipsCode/JavaScript-Introducao/MiniProj
 
 https://thi2u.github.io/full-stack-turbo-TipsCode/JavaScript-Introducao/MiniProjetos/corAleatoria/
 
-https://thi2u.github.io/full-stack-turbo-TipsCode/JavaScript-Introducao/MiniProjetos/projeto-bateria-start/
+https://thi2u.github.io/full-stack-turbo-TipsCode/JavaScript-Introducao/projeto-bateria-start/
