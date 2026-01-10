@@ -83,3 +83,14 @@ footer {
 .audioDrum{
   display: none;
 }
+
+#gitLink{
+    font-size: 3rem;
+    position: fixed;
+    top: 50%;
+    right: 1px;
+}
+
+#gitLink a{
+    color: #db5d59;
+}
