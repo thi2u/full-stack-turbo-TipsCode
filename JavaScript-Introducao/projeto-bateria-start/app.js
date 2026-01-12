@@ -35,7 +35,11 @@ const imagesBateria = [
 bodySelected.addEventListener("keydown", function (e){
     const keyDown = keysPressed.indexOf(e.code)
     if (keyDown !== -1){
-    tocarAudio(keyDown)
+        tocarAudio(keyDown)
+        botoes[keyDown].classList.add("pressed")
+        setTimeout(function(){
+            botoes[keyDown].classList.remove("pressed")
+        }, 350)
     }
 }
 )
@@ -44,6 +48,10 @@ botoes.forEach(handleClick)
 function handleClick(item, indice){
     item.addEventListener("click", function (){
         tocarAudio(indice)
+        botoes[indice].classList.add("pressed")
+        setTimeout(function(){
+            botoes[indice].classList.remove("pressed")
+        }, 350)
     }
 )
 }
